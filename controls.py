@@ -18,10 +18,10 @@ window.geometry('%dx%d+%d+%d' % (w, h, x, y))
 playing = subprocess.getoutput('rhythmbox-client --print-playing')
 
 #find images
-pauseimage = tk.PhotoImage(file='~/.rhythmboxcontrols/pause.gif')
-nextimage = tk.PhotoImage(file='~/.rhythmboxcontrols/next.gif')
-previousimage = tk.PhotoImage(file='~/.rhythmboxcontrols/previous.gif')
-playimage = tk.PhotoImage(file='~/.rhythmboxcontrols/play.gif')
+pauseimage = tk.PhotoImage(file='~/.rhythmboxcontrols/images/pause.gif')
+nextimage = tk.PhotoImage(file='~/.rhythmboxcontrols/images/next.gif')
+previousimage = tk.PhotoImage(file='~/.rhythmboxcontrols/images/previous.gif')
+playimage = tk.PhotoImage(file='~/.rhythmboxcontrols/images/play.gif')
 playpauselist = [pauseimage, playimage]
 playpauseindex = 0
 
