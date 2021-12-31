@@ -1,4 +1,4 @@
-i~ tkinter as tk
+import tkinter as tk
 import os
 import subprocess
 
