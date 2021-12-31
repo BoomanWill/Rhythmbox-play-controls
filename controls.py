@@ -1,4 +1,4 @@
-import tkinter as tk
+i~ tkinter as tk
 import os
 import subprocess
 
@@ -9,10 +9,10 @@ window = tk.Tk()
 playing = subprocess.getoutput('rhythmbox-client --print-playing')
 
 #find images
-pauseimage = tk.PhotoImage(file='/home/will/Downloads/pause.gif')
-nextimage = tk.PhotoImage(file='/home/will/Downloads/next.gif')
-previousimage = tk.PhotoImage(file='/home/will/Downloads/previous.gif')
-playimage = tk.PhotoImage(file='/home/will/Downloads/play.gif')
+pauseimage = tk.PhotoImage(file='~/Downloads/pause.gif')
+nextimage = tk.PhotoImage(file='~/Downloads/next.gif')
+previousimage = tk.PhotoImage(file='~/Downloads/previous.gif')
+playimage = tk.PhotoImage(file='~/Downloads/play.gif')
 playpauselist = [pauseimage, playimage]
 playpauseindex = 0
 
