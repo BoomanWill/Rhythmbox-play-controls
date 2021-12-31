@@ -9,10 +9,10 @@ window = tk.Tk()
 playing = subprocess.getoutput('rhythmbox-client --print-playing')
 
 #find images
-pauseimage = tk.PhotoImage(file='~/.rhythmboxcontrols/images/pause.gif')
-nextimage = tk.PhotoImage(file='~/Downloads/next.gif')
-previousimage = tk.PhotoImage(file='~/Downloads/previous.gif')
-playimage = tk.PhotoImage(file='~/Downloads/play.gif')
+pauseimage = tk.PhotoImage(file='~/.rhythmboxcontrols/pause.gif')
+nextimage = tk.PhotoImage(file='~/.rhythmboxcontrols/next.gif')
+previousimage = tk.PhotoImage(file='~/.rhythmboxcontrols/previous.gif')
+playimage = tk.PhotoImage(file='~/.rhythmboxcontrols/play.gif')
 playpauselist = [pauseimage, playimage]
 playpauseindex = 0
 
