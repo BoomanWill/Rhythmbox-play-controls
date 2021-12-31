@@ -2,8 +2,17 @@ import tkinter as tk
 import os
 import subprocess
 
+os.system('rhythmbox-client --pause')
 
 window = tk.Tk()
+window.wait_visibility(window)
+window.wm_attributes('-alpha',0.8)
+window.title(string='Rhythmbox Controls')
+window.attributes('-topmost', True)
+hs = window.winfo_screenheight()
+h, w = 50, 340
+x, y = 0, hs-h
+window.geometry('%dx%d+%d+%d' % (w, h, x, y))
 
 
 playing = subprocess.getoutput('rhythmbox-client --print-playing')
@@ -17,7 +26,6 @@ playpauselist = [pauseimage, playimage]
 playpauseindex = 0
 
 #create things
-frame = tk.Frame(master=window, width=340, height=50)
 song = tk.Label(window, text=playing)
 playpause = tk.Button(window, image = playimage, width=20, height=20)
 next = tk.Button(window, image = nextimage, width=20, height=20)
@@ -56,7 +64,6 @@ previous.bind('<Button-1>', previouspress)
 
 
 #position everything
-frame.pack()
 next.place(x=190, y=20)
 playpause.place(x=160, y=20)
 previous.place(x=130, y=20)
